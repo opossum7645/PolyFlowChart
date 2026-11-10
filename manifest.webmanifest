@@ -1,0 +1,45 @@
+{
+  "name": "PoliFlowchart – Diagrammi di flusso",
+  "short_name": "PoliFlowchart",
+  "description": "Crea ed esegui diagrammi di flusso su computer, iPad e iPhone",
+  "lang": "it",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#4f3bd6",
+  "theme_color": "#f7f8fa",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "application/xml": [
+          ".fprg"
+        ]
+      }
+    }
+  ],
+  "id": "./",
+  "categories": [
+    "education",
+    "productivity"
+  ]
+}

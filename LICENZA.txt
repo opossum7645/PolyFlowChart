@@ -1,0 +1,39 @@
+PoliFlowchart – Condizioni d'uso e note legali
+==============================================
+
+© 2026 PoliFlowchart. Tutti i diritti riservati.
+
+1. Uso consentito
+Puoi usare PoliFlowchart liberamente per studiare, insegnare e creare i tuoi
+programmi. I diagrammi e i file che crei sono tuoi.
+
+2. Uso non consentito
+Senza il permesso scritto dell'autore non è consentito copiare, modificare,
+decompilare, ridistribuire, ripubblicare con altro nome o rivendere l'app o
+parti del suo codice, della sua grafica, della sua icona e dei suoi testi.
+
+3. Nessuna garanzia
+Il programma è fornito "così com'è", senza garanzie di alcun tipo. Nei limiti
+consentiti dalla legge l'autore non risponde di danni o perdite di dati
+derivanti dall'uso. Conserva una copia dei programmi importanti (File › Salva).
+
+4. Privacy
+PoliFlowchart non raccoglie dati personali, non usa cookie di tracciamento e non
+si collega a siti esterni. Programmi, impostazioni e immagine di sfondo restano
+nella memoria del browser del dispositivo e non vengono inviati a nessun server.
+Il servizio che ospita il sito (per esempio Netlify) può registrare dati tecnici
+di accesso, come l'indirizzo IP, secondo la propria informativa.
+
+5. Indipendenza e compatibilità
+PoliFlowchart è un programma indipendente, scritto da zero. Non è affiliato,
+sponsorizzato o approvato dagli autori di Flowgorithm e non ne contiene codice,
+immagini o testi. PoliFlowchart legge e scrive i file .fprg al solo scopo di
+permettere lo scambio dei diagrammi. "Flowgorithm" e gli altri nomi di prodotti
+citati appartengono ai rispettivi titolari.
+
+6. Componenti di terze parti
+- three.js © 2010-2022 Three.js Authors, licenza MIT (testo in Aiuto ›
+  Informazioni e licenze).
+- Caratteri Patrick Hand, VT323, Pixelify Sans, Comic Neue, Rajdhani e
+  Share Tech Mono, dei rispettivi autori, SIL Open Font License 1.1
+  (https://openfontlicense.org).

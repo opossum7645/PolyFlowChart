@@ -1,0 +1,175 @@
+PoliFlowchart – app per iPad, iPhone, Android e computer
+========================================================
+
+Questa cartella contiene PoliFlowchart come app web installabile (PWA).
+Una volta messa online, si installa sulla schermata Home di iPad e iPhone
+(e su Android e computer), si apre a schermo intero con la sua icona e
+funziona anche senza internet.
+
+Apri GUIDA.html per la guida illustrata passo per passo.
+
+Contenuto
+---------
+index.html             l'app
+manifest.webmanifest   nome, icona e colori dell'app
+sw.js                  permette l'uso offline
+icons/                 icone
+GUIDA.html             guida per pubblicare e installare
+LICENZA.txt            condizioni d'uso e note legali
+
+1) Metti la cartella online (una volta sola, gratis)
+---------------------------------------------------
+Le app web devono essere aperte da un indirizzo https://.
+
+A. Netlify Drop (consigliato: il più semplice, i file non finiscono in un archivio pubblico)
+   1. Apri https://app.netlify.com/drop e accedi con un account gratuito.
+   2. Trascina la cartella "poliflowchart-app" nella pagina.
+   3. Netlify ti dà un indirizzo https://….netlify.app (puoi cambiarne il nome
+      in Site configuration › Change site name).
+
+B. Cloudflare Pages
+   1. Crea un account gratuito su https://pages.cloudflare.com
+   2. Create › Pages › Upload assets, e carica la cartella.
+
+C. GitHub Pages
+   Funziona, ma con l'account gratuito il repository deve essere pubblico:
+   chiunque può vedere e scaricare i file. Sceglilo solo se non ti importa.
+
+2) Installa
+-----------
+iPad e iPhone: apri l'indirizzo con Safari › Condividi › "Aggiungi alla schermata Home".
+Android: apri con Chrome › menu ⋮ › "Installa app".
+Computer: apri con Chrome o Edge › icona "Installa" nella barra dell'indirizzo.
+Dentro l'app trovi le stesse istruzioni in Aiuto › Installa l'app.
+Dopo la prima apertura funziona anche offline.
+
+Novità della versione 3.0
+-------------------------
+- Nuovo nome (PoliFlowchart) e nuova icona.
+- Guida all'installazione dentro l'app (Aiuto › Installa l'app) e in GUIDA.html.
+- Stile Schizzo: le frecce ora si vedono (sono tratti disegnati a mano).
+- L'onda che parte dal blocco eseguito ha la forma del blocco (rombo, esagono...).
+- Spazio 3D: colori corretti e nuovi effetti sopra il blocco, con la sua sagoma.
+- Animazioni combinabili: Alone, Onda e Rimbalzo insieme; Frecce in movimento
+  insieme alla luce; Coriandoli e Fuochi insieme.
+- Nessun collegamento a siti esterni: anche i caratteri dei temi sono dentro l'app.
+- Codice compresso e con avviso di copyright; condizioni d'uso in Aiuto › Informazioni.
+
+Novità della versione 2.9
+-------------------------
+- Pronta per essere pubblicata: nome, testi e temi non usano più marchi altrui.
+  I temi sono stati rinominati (Classico, Blu 2001, Grigio anni 90, Acqua,
+  Console 8-bit, Pioggia di codice) ma sono identici a prima.
+- Aiuto › Informazioni contiene le note legali, la privacy e le licenze.
+- I file .fprg si aprono e si salvano esattamente come prima.
+
+Novità della versione 2.8
+-------------------------
+- Esecuzione in tre tempi ben visibili: la luce esce dal blocco, percorre la freccia,
+  arriva e accende il blocco successivo, che viene eseguito proprio in quel momento.
+  La luce non passa mai sopra o dentro i blocchi.
+- Rilievo 3D, ombre e aloni dei blocchi ridisegnati come forme vere: ora si vedono
+  anche su iPad e iPhone (prima dipendevano da un effetto che Safari non mostra)
+- Spazio 3D durante l'esecuzione: la telecamera si avvicina e segue il blocco, che
+  salta su, si illumina e lancia un'onda e una colonna di luce; alla fine torna dov'era
+- Esporta immagine: puoi includere lo sfondo dello stile (motivo, sfondo animato o la
+  tua foto), una tinta unita o nessuno sfondo; il rilievo dei blocchi è nell'immagine
+- Tendine e menu più stabili: fondo pieno e animazioni semplici, senza sfarfallii
+
+Novità della versione 2.7
+-------------------------
+- Menu in alto rifatti: le tendine si aprono sempre, con ogni tema e su ogni schermo
+- La luce dell'esecuzione non passa più sopra i blocchi: corre sulle frecce come una
+  cometa, entra sotto il blocco (che si accende con un piccolo rimbalzo) e riesce
+- Sfondo personale: scegli una tua foto come sfondo del diagramma (Impostazioni ›
+  Diagramma › Sfondo › La tua immagine), con velatura e sfocatura; vale anche in 3D
+- Colore d'accento a scelta con qualsiasi tema (Impostazioni › Interfaccia)
+- Voce del narratore: legge ad alta voce la spiegazione dei passi
+- Riepilogo a fine esecuzione (passi fatti, blocco più eseguito) e tema a sorpresa
+- Barra degli strumenti sempre su una riga, anche su iPad; impostazioni più leggibili
+- Nello Spazio 3D la barra della telecamera non finisce più sotto le finestre
+
+Novità della versione 2.6
+-------------------------
+- La luce dell'esecuzione è un'unica luce continua: percorre le frecce curva per curva,
+  attraversa il blocco eseguito e riparte, a tutte le velocità (anche Veloce)
+- Telecamera stabilizzata: insegue il blocco con dolcezza, senza scatti; se un ciclo
+  sta tutto nello schermo resta ferma a inquadrarlo
+- Spazio 3D compatibile con tutto: tutti gli stili dei blocchi (Contorno, Morbidi,
+  Fumetto, Pixel, Schizzo...), contatore delle esecuzioni, strada già fatta, Trova,
+  Sposta, collegamento con il codice, stessa luce e stessa telecamera del diagramma piano
+- Impostazioni più chiare: ogni scelta dice che cosa fa
+
+Novità della versione 2.5
+-------------------------
+- Spazio 3D vero: il diagramma diventa un plastico con blocchi solidi, ombre e luci.
+  Ci giri attorno, ti avvicini, selezioni, modifichi e sposti i blocchi; durante
+  l'esecuzione una sfera di luce corre lungo le frecce (pulsante con il cubo).
+- Moviola: dopo l'esecuzione puoi riavvolgere e rivedere ogni passo, avanti e indietro,
+  con variabili e output di quel momento (Programma › Riavvolgi l'esecuzione)
+- Nuovi stili: Windows XP, Windows 98, Mac Aqua, Game Boy, Fumetto, Cyberpunk,
+  Morbido, Matrix, Schizzo; nuovi blocchi (Morbidi, Fumetto, Pixel, Schizzo),
+  nuovi sfondi (Colline, Righine, Retino, Pioggia digitale)
+- Codice in C come linguaggio predefinito, con le righe colorate come i blocchi
+- Animazioni dell'esecuzione sincronizzate con la velocità
+- Menu ordinati per sezioni; Impostazioni con la barra delle sezioni sempre visibile
+- Menu e finestre che si scorrono bene sul telefono e non coprono più i comandi dei blocchi
+- Minimappa e modalità presentazione rinnovate (puntatore laser, tasti rapidi)
+
+Novità della versione 2.3
+-------------------------
+- Impostazioni riordinate: ogni cosa si regola in un solo posto, niente doppioni
+  (Temi, Interfaccia, Diagramma, Animazioni, Esecuzione, Editor, Dati)
+- Sfondo unico: motivi fissi e sfondi animati nella stessa scelta, con anteprime
+- Velocità di esecuzione più comoda: tachimetro nella barra (anche su telefono e
+  in presentazione), 6 velocità da Moviola a Turbo, tasti + e −, menu Programma.
+  Cambia subito, anche mentre il programma è in esecuzione.
+- Pausa e Stop reagiscono subito anche alle velocità lente
+
+Novità della versione 2.2
+-------------------------
+- Vista 3D del diagramma: Piana, Inclinata, Isometrica, Fluttuante (pulsante cubo)
+- La luce dell'esecuzione segue il percorso vero: rami, ritorni dei cicli, uscite, chiamate
+- Telecamera che segue o centra sempre il blocco (modalità cinema)
+- Narratore: un fumetto spiega cosa fa ogni blocco mentre il programma gira
+- Contatore delle esecuzioni (mappa di calore sui blocchi) e Tabella di traccia
+- Modalità presentazione a schermo intero
+- Opzioni riordinate: ogni effetto si sceglie in un solo posto, senza doppioni
+
+Novità della versione 2.1
+-------------------------
+- Nuove Impostazioni con sezioni, ricerca e anteprime
+- Effetti 3D: blocchi in rilievo, lucidi o di vetro, interfaccia 3D, cubo tra le funzioni
+- Sfondi animati (stelle, viaggio 3D, griglia anni '80, aurora, bolle, particelle)
+- Scintilla e onda durante l'esecuzione, coriandoli o fuochi d'artificio alla fine
+- Schermata di benvenuto e suggerimento per il primo blocco
+
+Novità della versione 2
+-----------------------
+- Selezione di più blocchi (anche dal telefono), trascinamento, Sposta, Duplica, Trova
+- Punti di interruzione con condizione, console Chat/Testo, variabili colorate per tipo
+- Codice in 15 linguaggi evidenziato insieme al diagramma, grafica tartaruga
+- Temi, schemi colori, stili del diagramma e animazioni in Strumenti › Impostazioni
+- 18 esempi pronti in File › Esempi
+
+Se avevi già installato la versione precedente: sostituisci i file online con questi.
+L'app sull'iPad si aggiorna da sola alla prima apertura con internet.
+
+I programmi
+-----------
+- Il programma su cui lavori viene salvato automaticamente sul dispositivo.
+- File › Salva › "Salva su questo dispositivo" conserva più programmi con un nome.
+- File › Salva › "Scarica file .fprg" crea un file nel formato .fprg, usato anche da Flowgorithm.
+- File › Apri apre i file .fprg (anche da File/iCloud Drive).
+
+Aggiornare l'app
+----------------
+Se ricevi una nuova versione, sostituisci i file online con quelli nuovi.
+Le app installate si aggiornano da sole alla successiva apertura con internet.
+
+Note legali
+-----------
+Vedi LICENZA.txt. In breve: PoliFlowchart è un programma indipendente, scritto
+da zero; non è affiliato agli autori di Flowgorithm, citato solo per indicare
+la compatibilità dei file .fprg. Le licenze dei componenti di terze parti
+(three.js, caratteri) sono in LICENZA.txt e in Aiuto › Informazioni e licenze.

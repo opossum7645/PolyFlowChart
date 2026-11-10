@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PoliFlowchart – Guida all'installazione</title>
+<style>
+:root{--bg:#f4f5fb;--card:#fff;--ink:#1b1c2e;--muted:#5d6079;--edge:#dfe1ee;--acc:#6d3be8;--soft:#ece6ff}
+@media (prefers-color-scheme:dark){:root{--bg:#12131d;--card:#1c1e2c;--ink:#eef0ff;--muted:#a3a7c4;--edge:#2e3147;--acc:#a48bff;--soft:#2a2550}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:16px 16px 56px}
+.hero{display:flex;gap:18px;align-items:center;padding:22px;border-radius:22px;color:#fff;background:linear-gradient(135deg,#4338ca,#7c3aed 55%,#e11d74);box-shadow:0 14px 34px rgba(76,40,180,.28)}
+.hero img{width:84px;height:84px;border-radius:20px;flex:none;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.hero h1{margin:0;font-size:26px;line-height:1.15;text-wrap:balance}
+.hero p{margin:6px 0 0;opacity:.93}
+h2{margin:34px 0 10px;font-size:20px;display:flex;align-items:center;gap:10px}
+h2 .n{width:30px;height:30px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;font-size:15px;flex:none}
+.card{background:var(--card);border:1px solid var(--edge);border-radius:16px;padding:16px 18px;margin:10px 0}
+.card h3{margin:0 0 6px;font-size:16.5px}
+.tag{font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--soft);color:var(--acc);margin-left:6px;vertical-align:2px}
+ol{margin:6px 0 0;padding:0;list-style:none;counter-reset:s;display:grid;gap:9px}
+ol li{counter-increment:s;position:relative;padding-left:36px}
+ol li::before{content:counter(s);position:absolute;left:0;top:0;width:25px;height:25px;border-radius:50%;background:var(--soft);color:var(--acc);font-weight:700;font-size:13px;display:grid;place-items:center}
+ul{margin:6px 0 0;padding-left:20px}
+code{background:var(--soft);padding:1px 6px;border-radius:6px;font-size:.92em}
+.note{border-left:4px solid var(--acc);background:var(--soft);padding:10px 14px;border-radius:0 12px 12px 0;margin:12px 0}
+small,.muted{color:var(--muted)}
+a{color:var(--acc)}
+svg.i{width:19px;height:19px;vertical-align:-4px;color:var(--acc)}
+footer{margin-top:34px;font-size:13px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<main>
+<div class="hero">
+  <img src="icons/icon-192.png" alt="Icona di PoliFlowchart">
+  <div><h1>Guida all'installazione di PoliFlowchart</h1><p>Due passaggi: metti l'app online una volta sola, poi installala su tutti i dispositivi che vuoi.</p></div>
+</div>
+
+<h2><span class="n">1</span>Metti l'app online</h2>
+<p class="muted">Serve un indirizzo <code>https://</code>: è ciò che permette a iPad, iPhone e agli altri dispositivi di installarla e usarla senza internet. È gratis e si fa una volta sola.</p>
+<div class="card">
+  <h3>Netlify Drop <span class="tag">consigliato</span></h3>
+  <ol>
+    <li>Apri <b>app.netlify.com/drop</b> e accedi con un account gratuito.</li>
+    <li>Trascina nella pagina l'intera cartella <code>poliflowchart-app</code> (quella che contiene questo file).</li>
+    <li>Dopo qualche secondo ricevi un indirizzo del tipo <code>https://nome.netlify.app</code>. Puoi cambiare il nome in <b>Site configuration › Change site name</b>.</li>
+  </ol>
+</div>
+<div class="card">
+  <h3>In alternativa</h3>
+  <ul>
+    <li><b>Cloudflare Pages</b>: Create › Pages › Upload assets, e carica la cartella.</li>
+    <li><b>GitHub Pages</b>: funziona, ma con l'account gratuito il repository è pubblico e chiunque può scaricare i file.</li>
+    <li><b>Il tuo sito</b>: copia il contenuto della cartella in una sottocartella del sito (deve essere servito in https).</li>
+  </ul>
+</div>
+<div class="note">Per aggiornare l'app in futuro basta ricaricare la cartella nuova sullo stesso sito: i dispositivi si aggiornano da soli alla successiva apertura con internet.</div>
+
+<h2><span class="n">2</span>Installala sul dispositivo</h2>
+<div class="card">
+  <h3>iPhone e iPad <small>con Safari</small></h3>
+  <ol>
+    <li>Apri l'indirizzo dell'app con <b>Safari</b>.</li>
+    <li>Tocca <b>Condividi</b> <svg class="i" viewBox="0 0 24 24"><path d="M12 15V3.5M8 7l4-4 4 4M7 10.5H5.5v10h13v-10H17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>: su iPhone è in basso, su iPad in alto a destra.</li>
+    <li>Scorri e scegli <b>Aggiungi alla schermata Home</b>.</li>
+    <li>Tocca <b>Aggiungi</b>. Apri PoliFlowchart dalla sua icona: parte a schermo intero.</li>
+  </ol>
+</div>
+<div class="card">
+  <h3>Telefoni e tablet Android <small>con Chrome</small></h3>
+  <ol>
+    <li>Apri l'indirizzo dell'app con <b>Chrome</b>.</li>
+    <li>Tocca il menu <b>⋮</b> in alto a destra.</li>
+    <li>Scegli <b>Installa app</b> (oppure <b>Aggiungi a schermata Home</b>) e conferma.</li>
+  </ol>
+</div>
+<div class="card">
+  <h3>Computer Windows, Chromebook, Linux <small>con Chrome o Edge</small></h3>
+  <ol>
+    <li>Apri l'indirizzo dell'app.</li>
+    <li>Clicca l'icona <b>Installa</b> a destra nella barra dell'indirizzo. Se non c'è: menu <b>⋮</b> › <b>Trasmetti, salva e condividi</b> › <b>Installa pagina come app</b>.</li>
+    <li>Conferma. L'app compare nel menu Start o tra le applicazioni.</li>
+  </ol>
+</div>
+<div class="card">
+  <h3>Mac</h3>
+  <ol>
+    <li>Con <b>Safari</b> (macOS Sonoma o successivo): menu <b>File › Aggiungi al Dock</b>.</li>
+    <li>Con <b>Chrome</b>: icona <b>Installa</b> nella barra dell'indirizzo.</li>
+  </ol>
+</div>
+
+<h2><span class="n">3</span>Buono a sapersi</h2>
+<div class="card">
+  <ul>
+    <li>La prima volta aprila con internet acceso: da quel momento funziona anche <b>offline</b>.</li>
+    <li>I programmi restano salvati sul dispositivo. Per portarli su un altro usa <b>File › Salva › Scarica file</b>.</li>
+    <li>Le stesse istruzioni sono dentro l'app, in <b>Aiuto › Installa l'app</b>, già aperte sul tuo tipo di dispositivo.</li>
+    <li>Per disinstallarla: tieni premuta l'icona e scegli <b>Rimuovi</b> (sul computer: menu <b>⋮</b> dell'app › <b>Disinstalla</b>).</li>
+  </ul>
+</div>
+<footer>© 2026 PoliFlowchart · Condizioni d'uso in LICENZA.txt</footer>
+</main>
+</body>
+</html>
